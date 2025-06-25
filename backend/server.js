@@ -3,7 +3,7 @@ import cors from "cors"
 import dotenv from "dotenv"
 import connectDB from "./config/database.js"
 import userRoutes from "./routes/users.js"
-// import serviceRoutes from "./routes/services.js"
+import serviceRoutes from "./routes/services.js"
 // import appointmentRoutes from "./routes/appointments.js"
 
 dotenv.config()
@@ -18,13 +18,13 @@ app.use(express.json())
 
 // Routes
 app.use("/api/users", userRoutes)
-// app.use("/api/services", serviceRoutes)
+app.use("/api/services", serviceRoutes)
 // app.use("/api/appointments", appointmentRoutes)
 
 // Welcome route
 app.get("/", (req, res) => {
   res.json({
-    message: "🚀 Appointment Booking System API is running!",
+    message: "Appointment Booking System API is running!",
     version: "1.0.0",
     endpoints: {
       users: "/api/users",
