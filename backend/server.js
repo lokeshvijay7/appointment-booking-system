@@ -4,7 +4,7 @@ import dotenv from "dotenv"
 import connectDB from "./config/database.js"
 import userRoutes from "./routes/users.js"
 import serviceRoutes from "./routes/services.js"
-// import appointmentRoutes from "./routes/appointments.js"
+import appointmentRoutes from "./routes/appointments.js"
 
 dotenv.config()
 
@@ -19,7 +19,7 @@ app.use(express.json())
 // Routes
 app.use("/api/users", userRoutes)
 app.use("/api/services", serviceRoutes)
-// app.use("/api/appointments", appointmentRoutes)
+app.use("/api/appointments", appointmentRoutes)
 
 // Welcome route
 app.get("/", (req, res) => {
