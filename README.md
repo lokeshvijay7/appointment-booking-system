@@ -242,9 +242,9 @@ postman/
 
 ### 📄 Collections
 
-- **User.postman_collection.json** – Contains all user-related requests (e.g., register, login).
-- **Service.postman_collection.json** – Includes all service creation and retrieval endpoints.
-- **Appointment.postman_collection.json** – Covers appointment booking and viewing APIs.
+- [**User.postman_collection.json**](postman/User.postman_collection.json) – Contains all user-related requests (e.g., register, login).
+- [**Service.postman_collection.json**](postman/Service.postman_collection.json) – Includes all service creation and retrieval endpoints.
+- [**Appointment.postman_collection.json**](postman/Appointment.postman_collection.json) – Covers appointment booking and viewing APIs.
 
 ### ✅ How to Use
 
