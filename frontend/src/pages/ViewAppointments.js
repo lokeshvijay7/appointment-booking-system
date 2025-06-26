@@ -44,7 +44,7 @@ const ViewAppointments = () => {
   const fetchAppointments = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/appointments?page=${pagination.current}&limit=${pagination.limit}`,
+        `https://appointment-booking-system-backend-aa4o.onrender.com/api/appointments?page=${pagination.current}&limit=${pagination.limit}`,
       )
       setAppointments(response.data.data)
       setPagination(response.data.pagination)
@@ -60,7 +60,7 @@ const ViewAppointments = () => {
 
   const updateAppointmentStatus = async (id, status) => {
     try {
-      await axios.put(`http://localhost:5000/api/appointments/${id}/status`, {
+      await axios.put(`https://appointment-booking-system-backend-aa4o.onrender.com/api/appointments/${id}/status`, {
         status,
       })
       setMessage({
