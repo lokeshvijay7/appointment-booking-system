@@ -15,7 +15,11 @@ This system helps businesses manage appointments easily. Customers can book appo
 - Fitness centers & gyms
 - Any business that takes appointments
 
+## 🚀 Live Demo
 
+- **Frontend**: https://ev-charging-app-frontend.onrender.com/
+- **Backend API**: https://ev-charging-app-punn.onrender.com/
+  
 ## Features
 
 - ✅ User registration and management
@@ -26,6 +30,28 @@ This system helps businesses manage appointments easily. Customers can book appo
 - ✅ Responsive design - works on mobile and desktop
 - ✅ Real-time validation and error handling
 - ✅ Pagination for large datasets
+
+## Screenshots
+
+### Homepage
+
+![Dashboard](screenshot/home.png)
+
+### User Registration
+
+![Dashboard](screenshot/home.png)
+
+### Service Creation
+
+![Dashboard](screenshot/home.png)
+
+### Appointment Booking
+
+![Dashboard](screenshot/home.png)
+
+### Appointment Management
+
+![Dashboard](screenshot/home.png)
 
 
 ## Technology Stack
@@ -102,16 +128,6 @@ npm run dev
 cd frontend
 npm start
 ```
-
-
-5. **Access the Application**
-
-1. Frontend: [http://localhost:3000](http://localhost:3000)
-2. Backend API: [http://localhost:5000](http://localhost:5000)
-
-
-
-
 
 ## How to Use
 
@@ -279,27 +295,6 @@ appointment-booking-system/
 └── CONTRIBUTING.md
 ```
 
-## Screenshots
-
-### Homepage
-
-Clean and professional homepage with easy navigation to all features.
-
-### User Registration
-
-Simple form to register new customers with validation.
-
-### Service Creation
-
-Easy interface to create services with duration and description.
-
-### Appointment Booking
-
-Intuitive booking form with date/time picker and dropdown selections.
-
-### Appointment Management
-
-Complete dashboard to view and manage all appointments with status updates.
 
 ## Database Schema
 
@@ -391,39 +386,6 @@ All errors return proper HTTP status codes and user-friendly messages.
 - Use Postman collection to test APIs
 
 
-## Deployment
-
-### Frontend (Vercel)
-
-1. Build the app: `npm run build`
-2. Deploy to Vercel: `vercel --prod`
-
-
-### Backend (Railway/Heroku)
-
-1. Push code to GitHub
-2. Connect to Railway/Heroku
-3. Set environment variables
-4. Deploy
-
-
-### Database (MongoDB Atlas)
-
-1. Create MongoDB Atlas account
-2. Create cluster and database
-3. Update MONGODB_URI in production
-
-
-## Contributing
-
-1. Fork the repository
-2. Create feature branch: `git checkout -b feature-name`
-3. Make changes and test
-4. Commit: `git commit -m "Add feature"`
-5. Push: `git push origin feature-name`
-6. Create Pull Request
-
-
 ## Future Enhancements
 
 - 🔐 User authentication and login
@@ -436,20 +398,22 @@ All errors return proper HTTP status codes and user-friendly messages.
 - 👥 Multi-user support
 - 🌐 Multi-language support
 
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ## Support
 
 For support and questions:
 
 - Create an issue on GitHub
-- Email: [lokeshvijay7@example.com](mailto:lokeshvijay7@example.com)
+- Email: loki7cr@gmail.com
 - GitHub: [@lokeshvijay7](https://github.com/lokeshvijay7)
 
 
+## 👨‍💻 Author
+
+**Lokesh K V**
+- GitHub: https://github.com/lokeshvijay7
+- Email: loki7cr@gmail.com
+
+  
 ## Acknowledgments
 
 - React team for the amazing framework
