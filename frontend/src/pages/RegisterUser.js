@@ -26,7 +26,7 @@ const RegisterUser = () => {
     setMessage({ type: "", text: "" })
 
     try {
-      const response = await axios.post("http://localhost:5000/api/users", formData)
+      const response = await axios.post("https://appointment-booking-system-backend-aa4o.onrender.com/api/users", formData)
       setMessage({ type: "success", text: response.data.message })
       setFormData({ name: "", email: "" })
     } catch (error) {
