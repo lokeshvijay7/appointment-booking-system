@@ -17,8 +17,8 @@ This system helps businesses manage appointments easily. Customers can book appo
 
 ## 🚀 Live Demo
 
-- **Frontend**: https://ev-charging-app-frontend.onrender.com/
-- **Backend API**: https://ev-charging-app-punn.onrender.com/
+- **Frontend**: https://appointment-booking-system-ynsc.onrender.com
+- **Backend API**: https://appointment-booking-system-backend-aa4o.onrender.com
   
 ## Features
 
