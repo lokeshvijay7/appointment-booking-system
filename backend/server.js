@@ -34,7 +34,6 @@ app.get("/", (req, res) => {
   })
 })
 
-// Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err.stack)
   res.status(500).json({
@@ -44,7 +43,6 @@ app.use((err, req, res, next) => {
   })
 })
 
-// 404 handler
 app.use("*", (req, res) => {
   res.status(404).json({
     success: false,
