@@ -37,7 +37,7 @@ const CreateService = () => {
     setMessage({ type: "", text: "" })
 
     try {
-      const response = await axios.post("http://localhost:5000/api/services", {
+      const response = await axios.post("https://appointment-booking-system-backend-aa4o.onrender.com/api/services", {
         ...formData,
         duration: Number.parseInt(formData.duration),
       })
