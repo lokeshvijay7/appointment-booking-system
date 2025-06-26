@@ -410,13 +410,6 @@ All errors return proper HTTP status codes and user-friendly messages.
 - 👥 Multi-user support
 - 🌐 Multi-language support
 
-## Support
-
-For support and questions:
-
-- Create an issue on GitHub
-- Email: loki7cr@gmail.com
-- GitHub: [@lokeshvijay7](https://github.com/lokeshvijay7)
 
 
 ## 👨‍💻 Author
@@ -439,4 +432,3 @@ For support and questions:
 
 **⭐ If this project helped you, please give it a star!**
 
-**Made with ❤️ for businesses everywhere**
