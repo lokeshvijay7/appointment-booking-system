@@ -9,7 +9,7 @@ import Home from "./pages/Home"
 import RegisterUser from "./pages/RegisterUser"
 // import CreateService from "./pages/CreateService"
 import BookAppointment from "./pages/BookAppointment"
-// import ViewAppointments from "./pages/ViewAppointments"
+import ViewAppointments from "./pages/ViewAppointments"
 
 const theme = createTheme({
   palette: {
@@ -54,7 +54,7 @@ function App() {
               <Route path="/register-user" element={<RegisterUser />} />
               {/* <Route path="/create-service" element={<CreateService />} /> */}
               <Route path="/book-appointment" element={<BookAppointment />} />
-              {/* <Route path="/appointments" element={<ViewAppointments />} /> */}
+              <Route path="/appointments" element={<ViewAppointments />} />
             </Routes>
           </div>
         </Router>
