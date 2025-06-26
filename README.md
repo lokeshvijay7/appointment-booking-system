@@ -227,24 +227,34 @@ POST /api/appointments
 }
 ```
 
-## Testing with Postman
+## 🧪 Testing with Postman
 
-Import the Postman collection from the `postman` folder:
+You can test all APIs using Postman. Follow the steps below to import the collections and execute the requests in order.
 
-- `BookEasy-API-Collection.json` - All API requests
-- `BookEasy-Environment.json` - Environment variables
+### 📁 Folder Structure
 
-
-**Steps:**
-
-1. Import both files into Postman
-2. Set environment to "Appointment Booking Local"
-3. Run requests in order:
-
-1. Create User → Create Service → Book Appointment → Get Appointments
+postman/
+├── User.postman_collection.json
+├── Service.postman_collection.json
+└── Appointment.postman_collection.json
 
 
+### 📄 Collections
 
+- **User.postman_collection.json** – Contains all user-related requests (e.g., register, login).
+- **Service.postman_collection.json** – Includes all service creation and retrieval endpoints.
+- **Appointment.postman_collection.json** – Covers appointment booking and viewing APIs.
+
+### ✅ How to Use
+
+1. Open Postman.
+2. Import all three `.json` files from the `postman` folder.
+3. (Optional) Set up any environment variables if required.
+4. Run the API requests in the following order:
+   - `Create User`
+   - `Create Service`
+   - `Book Appointment`
+   - `Get Appointments`
 
 
 ## Project Structure
@@ -287,8 +297,9 @@ appointment-booking-system/
 │   │   └── index.js             # Entry point
 │   └── package.json
 ├── postman/
-│   ├── BookEasy-API-Collection.json
-│   └── BookEasy-Environment.json
+│   ├── User.postman_collection.json
+│   └── Service.postman_collection.json
+│   └── Appointment.postman_collection.json
 ├── README.md
 ├── .gitignore
 ├── LICENSE
