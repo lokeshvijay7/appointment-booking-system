@@ -39,7 +39,7 @@ const BookAppointment = () => {
 
   const fetchUsers = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/users")
+      const response = await axios.get("https://appointment-booking-system-backend-aa4o.onrender.com/api/users")
       setUsers(response.data.data)
     } catch (error) {
       console.error("Failed to fetch users:", error)
@@ -48,7 +48,7 @@ const BookAppointment = () => {
 
   const fetchServices = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/services")
+      const response = await axios.get("https://appointment-booking-system-backend-aa4o.onrender.com/api/services")
       setServices(response.data.data)
     } catch (error) {
       console.error("Failed to fetch services:", error)
@@ -75,7 +75,7 @@ const BookAppointment = () => {
     setMessage({ type: "", text: "" })
 
     try {
-      const response = await axios.post("http://localhost:5000/api/appointments", {
+      const response = await axios.post("https://appointment-booking-system-backend-aa4o.onrender.com/api/appointments", {
         ...formData,
         scheduledAt: formData.scheduledAt.toISOString(),
       })
