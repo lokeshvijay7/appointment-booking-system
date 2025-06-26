@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "1a6beabc-54c4-4f7a-9440-ca49267b0acc",
+		"name": "Appointment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34998108",
+		"_collection_link": "https://mern55-4529.postman.co/workspace/appointment-booking-system~710445b6-c924-41b9-a6c3-68588bbae13b/collection/34998108-1a6beabc-54c4-4f7a-9440-ca49267b0acc?action=share&source=collection_link&creator=34998108"
+	},
+	"item": [
+		{
+			"name": "Create Appointment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userId\": \"685c2ba107638f9a3f8fc0bc\",\r\n  \"serviceId\": \"685c2e5a0f2afa95f9f3d1ec\",\r\n   \"scheduledAt\": \"2025-07-01T00:00:00.000Z\",\r\n  \"notes\": \"First appointment\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/appointments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"appointments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Appointments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/appointments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"appointments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Appointment Status",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"status\": \"completed\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/appointments/685c34f0bb83a63c3bf8a637/status",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"appointments",
+						"685c34f0bb83a63c3bf8a637",
+						"status"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "33109002-4646-4381-b8a6-96f342b1dfd0",
+		"name": "Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34998108",
+		"_collection_link": "https://mern55-4529.postman.co/workspace/appointment-booking-system~710445b6-c924-41b9-a6c3-68588bbae13b/collection/34998108-33109002-4646-4381-b8a6-96f342b1dfd0?action=share&source=collection_link&creator=34998108"
+	},
+	"item": [
+		{
+			"name": "Create Service",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Massage\",\r\n  \"duration\": 60,\r\n  \"description\": \"Full body massage\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/services",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"services"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Services",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/services",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"services"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
