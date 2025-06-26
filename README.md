@@ -35,23 +35,23 @@ This system helps businesses manage appointments easily. Customers can book appo
 
 ### Homepage
 
-![Dashboard](screenshot/home.png)
+![Home](screenshot/home.png)
 
 ### User Registration
 
-![Dashboard](screenshot/home.png)
+![Registration](screenshot/registration.png)
 
 ### Service Creation
 
-![Dashboard](screenshot/home.png)
+![Service](screenshot/service.png)
 
 ### Appointment Booking
 
-![Dashboard](screenshot/home.png)
+![Booking](screenshot/booking.png)
 
 ### Appointment Management
 
-![Dashboard](screenshot/home.png)
+![Appointment](screenshot/appointment.png)
 
 
 ## Technology Stack
