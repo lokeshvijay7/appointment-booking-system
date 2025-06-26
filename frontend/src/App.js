@@ -6,7 +6,7 @@ import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs"
 
 import Navbar from "./components/Navbar"
 import Home from "./pages/Home"
-// import RegisterUser from "./pages/RegisterUser"
+import RegisterUser from "./pages/RegisterUser"
 // import CreateService from "./pages/CreateService"
 // import BookAppointment from "./pages/BookAppointment"
 // import ViewAppointments from "./pages/ViewAppointments"
@@ -51,8 +51,8 @@ function App() {
             <Navbar />
             <Routes>
               <Route path="/" element={<Home />} />
-              {/* <Route path="/register-user" element={<RegisterUser />} />
-              <Route path="/create-service" element={<CreateService />} />
+              <Route path="/register-user" element={<RegisterUser />} />
+              {/* <Route path="/create-service" element={<CreateService />} />
               <Route path="/book-appointment" element={<BookAppointment />} />
               <Route path="/appointments" element={<ViewAppointments />} /> */}
             </Routes>
