@@ -65,65 +65,67 @@ const Home = () => {
       </Paper>
 
       {/* Features Grid */}
-      <Typography variant="h4" component="h2" gutterBottom textAlign="center" sx={{ mb: 4 }}>
-        Get Started
-      </Typography>
+      <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", mb: 4 }}>
+        <Typography variant="h4" component="h2" gutterBottom textAlign="center">
+          Get Started
+        </Typography>
 
-      <Grid container spacing={4}>
-        {features.map((feature, index) => (
-          <Grid item xs={12} sm={6} md={3} key={index}>
-            <Card
-              elevation={3}
-              sx={{
-                height: "100%",
-                display: "flex",
-                flexDirection: "column",
-                transition: "transform 0.2s, box-shadow 0.2s",
-                "&:hover": {
-                  transform: "translateY(-4px)",
-                  boxShadow: 6,
-                },
-              }}
-            >
-              <CardContent sx={{ flexGrow: 1, textAlign: "center", p: 3 }}>
-                <Box
-                  sx={{
-                    backgroundColor: feature.color,
-                    borderRadius: "50%",
-                    width: 80,
-                    height: 80,
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    mx: "auto",
-                    mb: 2,
-                  }}
-                >
-                  {feature.icon}
-                </Box>
-                <Typography variant="h6" component="h3" gutterBottom fontWeight="bold">
-                  {feature.title}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  {feature.description}
-                </Typography>
-              </CardContent>
-              <CardActions sx={{ justifyContent: "center", pb: 2 }}>
-                <Button variant="contained" onClick={() => navigate(feature.path)} sx={{ borderRadius: 2 }}>
-                  Get Started
-                </Button>
-              </CardActions>
-            </Card>
-          </Grid>
-        ))}
-      </Grid>
+        <Grid container spacing={4} justifyContent="center" sx={{ mt: 2, maxWidth: 900 }}>
+          {features.map((feature, index) => (
+            <Grid item xs={12} sm={6} md={3} key={index}>
+              <Card
+                elevation={3}
+                sx={{
+                  height: "100%",
+                  display: "flex",
+                  flexDirection: "column",
+                  transition: "transform 0.2s, box-shadow 0.2s",
+                  "&:hover": {
+                    transform: "translateY(-4px)",
+                    boxShadow: 6,
+                  },
+                }}
+              >
+                <CardContent sx={{ flexGrow: 1, textAlign: "center", p: 3 }}>
+                  <Box
+                    sx={{
+                      backgroundColor: feature.color,
+                      borderRadius: "50%",
+                      width: 80,
+                      height: 80,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      mx: "auto",
+                      mb: 2,
+                    }}
+                  >
+                    {feature.icon}
+                  </Box>
+                  <Typography variant="h6" component="h3" gutterBottom fontWeight="bold">
+                    {feature.title}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {feature.description}
+                  </Typography>
+                </CardContent>
+                <CardActions sx={{ justifyContent: "center", pb: 2 }}>
+                  <Button variant="contained" onClick={() => navigate(feature.path)} sx={{ borderRadius: 2 }}>
+                    Get Started
+                  </Button>
+                </CardActions>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
+      </Box>
 
       {/* Stats Section */}
       <Paper elevation={2} sx={{ mt: 6, p: 4, borderRadius: 3 }}>
         <Typography variant="h5" component="h3" gutterBottom textAlign="center" fontWeight="bold">
           Why Choose BookEasy?
         </Typography>
-        <Grid container spacing={4} sx={{ mt: 2 }}>
+        <Grid container spacing={8} sx={{ mt: 2 }}>
           <Grid item xs={12} md={4} textAlign="center">
             <People sx={{ fontSize: 40, color: "primary.main", mb: 1 }} />
             <Typography variant="h6" fontWeight="bold">
