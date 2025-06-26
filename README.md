@@ -233,11 +233,12 @@ You can test all APIs using Postman. Follow the steps below to import the collec
 
 ### 📁 Folder Structure
 
+```plaintext
 postman/
 ├── User.postman_collection.json
 ├── Service.postman_collection.json
 └── Appointment.postman_collection.json
-
+```
 
 ### 📄 Collections
 
