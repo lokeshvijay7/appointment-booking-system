@@ -408,8 +408,6 @@ All errors return proper HTTP status codes and user-friendly messages.
 - 🗓️ Calendar integration
 - 🔔 SMS reminders
 - 👥 Multi-user support
-- 🌐 Multi-language support
-
 
 
 ## 👨‍💻 Author
