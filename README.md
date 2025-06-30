@@ -428,5 +428,6 @@ All errors return proper HTTP status codes and user-friendly messages.
 
 ---
 
+
 **⭐ If this project helped you, please give it a star!**
 
